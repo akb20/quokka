@@ -1,0 +1,14 @@
+.hero {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__headline {
+    margin: 0;
+  }
+
+  .lead {
+    margin: .5rem 0 2.5rem 0;
+  }
+}

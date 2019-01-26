@@ -1,0 +1,15 @@
+.btn {
+  display: block;
+  width: 190px;
+  padding: .5rem 1rem;
+  background-color: transparent;
+  color: $black;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 2px solid $green;
+  border-radius: 35px;
+}
