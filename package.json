@@ -1,0 +1,29 @@
+{
+  "name": "quokka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akb20/quokka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akb20/quokka/issues"
+  },
+  "homepage": "https://github.com/akb20/quokka#readme",
+  "dependencies": {
+    "autoprefixer": "^9.4.6",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.11.0",
+    "postcss-modules": "^1.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
