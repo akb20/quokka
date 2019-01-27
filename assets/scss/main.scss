@@ -5,12 +5,14 @@
 
 // Helpers
 @import './helpers/wrap.scss';
+@import './helpers/animations.scss';
 
 // Layout
 @import './layout/page.scss';
 @import './layout/header.scss';
 @import './layout/hero.scss';
 @import './layout/sports.scss';
+@import './layout/coaches.scss';
 
 // Modules
 @import './modules/buttons.scss';

@@ -4,7 +4,7 @@
 /**
  * Use a better box model (opinionated).
  */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
 html {
   box-sizing: border-box; }
 
@@ -227,7 +227,7 @@ summary {
   display: list-item; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #2D3436;
   background-color: #FFF;
@@ -303,6 +303,34 @@ li {
   width: 1050px;
   margin: 0 auto; }
 
+@-webkit-keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  25% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  95% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  25% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  50% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  95% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
 body {
   position: relative;
   overflow-x: hidden; }
@@ -340,7 +368,7 @@ body {
   .hero__headline {
     margin: 0; }
   .hero .lead {
-    margin: .5rem 0 2.5rem 0; }
+    margin: .5rem 0 3rem 0; }
 
 .sports {
   display: -ms-grid;
@@ -348,7 +376,8 @@ body {
   -ms-grid-columns: (1fr)[13];
   grid-template-columns: repeat(13, 1fr);
   grid-auto-rows: minmax(0, auto);
-  margin-top: -3rem; }
+  margin-top: -3rem;
+  margin-bottom: 6rem; }
   .sports__img {
     width: 100%;
     border-radius: 3px; }
@@ -359,7 +388,7 @@ body {
   .sports__desc {
     margin-bottom: 2.2rem; }
   .sports__link {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 700;
     color: #0984E3;
     padding-top: 2rem; }
@@ -392,10 +421,15 @@ body {
     -ms-grid-row-span: 3;
     grid-row: 6/9; }
 
+.coaches {
+  margin-top: 3rem;
+  background-color: #DFE6E9;
+  padding: 2rem; }
+
 .btn {
   display: block;
-  width: 190px;
-  padding: .5rem 1rem;
+  width: 220px;
+  padding: .8rem 0;
   background-color: transparent;
   color: #2D3436;
   text-align: center;
@@ -405,4 +439,17 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   border: 2px solid #00CEC9;
-  border-radius: 35px; }
+  border-radius: 35px;
+  transition: all .2s ease-in-out;
+  transition-property: background-color; }
+  .btn:hover {
+    background-color: #00CEC9;
+    color: #fff;
+    -webkit-animation-name: heartBeat;
+            animation-name: heartBeat;
+    -webkit-animation-duration: .6s;
+            animation-duration: .6s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  .btn--center {
+    margin: 0 auto; }
