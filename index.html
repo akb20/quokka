@@ -5,20 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
   <title>Quokka - Gold Coast Sports Club</title>
 </head>
 
 <body>
 
-  <img class="blob" src="./assets/images/blob-shape.svg" alt="">
-
   <header class="site-header">
     <span class="logo">quokka</span>
     <nav class="main-nav">
-      <a href="#">Schedule</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link" href="#">Schedule</a>
     </nav>
   </header>
 
@@ -26,64 +25,110 @@
 
     <section class="hero">
       <div class="hero__content">
-        <h2 class="hero__headline">It's about the journey, <br>not the destination.</h2>
-        <p class="lead">Get sweaty, get filthy, get fit.</p>
-        <a href="#" class="btn">challenge me</a>
+        <h1 class="hero__headline">The <span>Gold Coast's</span><br>premier sports club<br>&
+          lifestyle coaching.</h1>
+        <p data-aos="zoom-in-up" class="hero__kicker"><i class="far fa-calendar-alt"></i> Spring 2019 Schedule</p>
       </div>
     </section>
 
     <section class="sports">
 
-      <div class="sports__surfing">
-        <img class="sports__img" src="./assets/images/surfing.jpg" alt="surfing">
-        <h3 class="sports__title">surfing</h3>
-        <p class="sports__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem iure facere
+      <div class="sport__surfing">
+        <div class="sport__thumb sport__thumb--surfing">
+          <img data-aos="zoom-in-up" src="./assets/images/surfing.png" alt="">
+        </div>
+        <h3 class="sport__title">surfing</h3>
+        <p class="sport__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem iure facere
           illo totam debitis
           optio inventore in ullam asperiores!</p>
-        <a href="#" class="sports__link">upcoming events</a>
+        <div class="sport__footer">
+          <img src="./assets/images/sam-evans.png" alt="">
+          <span>Sam Evans</span>
+        </div>
       </div>
 
-      <div class="sports__trekking">
-        <img class="sports__img" src="./assets/images/hiking.jpg" alt="surfing">
-        <h3 class="sports__title">trekking</h3>
-        <p class="sports__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem iure facere
+
+      <div class="sport__trekking">
+        <div class="sport__thumb sport__thumb--trekking">
+          <img data-aos="zoom-in-up" src="./assets/images/trekking.png" alt="">
+        </div>
+        <h3 class="sport__title">trekking</h3>
+        <p class="sport__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem iure facere
           illo totam debitis
           optio inventore in ullam asperiores!</p>
-        <a class="sports__link">view schedule</a>
+        <div class="sport__footer">
+          <img src="./assets/images/sam-evans.png" alt="">
+          <span>Sam Evans</span>
+        </div>
       </div>
 
-      <div class="sports__bmx">
-        <img class="sports__img" src="./assets/images/bmx.jpg" alt="surfing">
-        <h3 class="sports__title">freestyle</h3>
-        <p class="sports__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem iure facere
+      <div class="sport__bmx">
+        <div class="sport__thumb sport__thumb--bmx">
+          <img data-aos="zoom-in-up" src="./assets/images/bmx.png" alt="">
+        </div>
+        <h3 class="sport__title">freestyle</h3>
+        <p class="sport__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem iure facere
           illo totam debitis
           optio inventore in ullam asperiores!</p>
-        <a class="sports__link">view schedule</a>
+        <div class="sport__footer">
+          <img src="./assets/images/sam-evans.png" alt="">
+          <span>Sam Evans</span>
+        </div>
       </div>
 
-      <div class="sports__basketball">
-        <img class="sports__img" src="./assets/images/basketball.jpg" alt="surfing">
-        <h3 class="sports__title">basketball</h3>
-        <p class="sports__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem iure facere
+      <div class="sport__basketball">
+        <div class="sport__thumb sport__thumb--basketball">
+          <img data-aos="zoom-in-up" src="./assets/images/bmx.png" alt="">
+        </div>
+        <h3 class="sport__title">street ball</h3>
+        <p class="sport__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem iure facere
           illo totam debitis
           optio inventore in ullam asperiores!</p>
-        <a class="sports__link">view schedule</a>
+        <div class="sport__footer">
+          <img src="./assets/images/sam-evans.png" alt="">
+          <span>Sam Evans</span>
+        </div>
       </div>
+
+
 
     </section>
 
-    <a href="#" class="btn btn--center">full schedule</a>
+    <a href="#" class="btn btn--center btn--yellow">all sports & schedule</a>
 
   </div>
   <!-- end wrap -->
 
+  <img src="./assets/images/torn.png" alt="" class="torn">
+
   <section class="coaches">
-    <h2>meet the coaches</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, iusto. Quae quis suscipit facere aliquam
-      officia totam iusto aspernatur libero esse itaque vitae harum quisquam, impedit perspiciatis quasi id reiciendis
-      cupiditate obcaecati dolores, ipsam ducimus. Doloribus, tempora? Inventore illo sit dolor odio molestiae, tempore
-      qui nemo minus repellat, perferendis alias, molestias velit possimus quos accusamus? Dignissimos quo assumenda
-      dolorum ad.</p>
+    <div class="wrap">
+      <h2 class="coaches__headline">Meet the Coaches</h2>
+      <div class="coaches__content">
+
+        <div class="coach coach__sam">
+          <img src="./assets/images/sam-evans.png" alt="">
+          <h4 class="coach__name">Sam Evans</h4>
+          <p class="coach__desc">Freestyle/Trekking/BBQ</p>
+        </div>
+
+        <div class="coach coach__cj">
+          <img src="./assets/images/sam-evans.png" alt="">
+          <h4 class="coach__name">Sam Evans</h4>
+          <p class="coach__desc">Freestyle/Trekking/BBQ</p>
+        </div>
+
+        <div class="coach coach__david">
+          <img src="./assets/images/sam-evans.png" alt="">
+          <h4 class="coach__name">Sam Evans</h4>
+          <p class="coach__desc">Freestyle/Trekking/BBQ</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
   </section>
 
 

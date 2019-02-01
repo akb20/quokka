@@ -1,25 +1,30 @@
 .site-header {
-  height: 55px;
-  // background-color: #ddd;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.2rem;
+  padding: 0 1.5rem;
   position: relative;
   z-index: 99;
 
   .logo {
+    font-family: 'IBM Plex Mono', monospace;
     color: $black;
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 400;
     text-transform: capitalize;
   }
 
-  .main-nav a {
+  .nav-link {
     text-decoration: none;
     color: $black;
-    margin-left: 1.3rem;
-    font-size: .9rem;
-    font-weight: 700;
+    margin-left: 2.5rem;
+    font-weight: 400;
+    transition: color .2s ease-in-out;
+
+    &:hover {
+      color: $yellow;
+      padding-top: -3px;
+    }
   }
 }

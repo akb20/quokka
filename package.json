@@ -24,6 +24,7 @@
     "postcss-modules": "^1.4.1"
   },
   "devDependencies": {
+    "aos": "^2.3.4",
     "babel-core": "^6.26.3"
   }
 }

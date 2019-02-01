@@ -3,12 +3,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 
-  &__headline {
-    margin: 0;
+  &__content {
+    transform: rotate(-5deg);
+    color: $black;
   }
 
-  .lead {
-    margin: .5rem 0 3rem 0;
+  &__headline {
+    font-size: 4.2rem;
+    font-weight: 200;
+  }
+
+  &__kicker {
+    display: inline;
+    color: $yellow;
+    font-weight: 700;
   }
 }
