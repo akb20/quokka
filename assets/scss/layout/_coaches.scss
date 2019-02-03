@@ -1,7 +1,9 @@
 .coaches {
   // margin-top: 7rem;
-  background-color: lighten($yellow, 20%);
+  background-color: $light-yellow;
   padding: 2rem 0;
+  margin-top: 4rem;
+  clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 100%);
 
   .wrap {
     width: 1050px;
@@ -16,7 +18,7 @@
     color: $black;
     font-weight: 200;
     text-align: center;
-    margin: 3rem 0;
+    margin-top: 5rem;
   }
 
   &__content {
@@ -29,7 +31,6 @@
        text-align: center;
 
       img {
-        // -webkit-filter: grayscale(1);
         display: block;
         margin: 0 auto;
         border-radius: 50%;
@@ -42,8 +43,8 @@
       }
 
       &__desc {
-        font-size: .8rem;
-        margin: 0;
+        font-size: .9rem;
+        margin: .2rem 0 0 0;
       }
 
       &__sam {

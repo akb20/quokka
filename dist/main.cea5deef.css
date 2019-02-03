@@ -4,7 +4,7 @@
 /**
  * Use a better box model (opinionated).
  */
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,400|IBM+Plex+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,400|IBM+Plex+Sans:300,400,700");
 html {
   box-sizing: border-box; }
 
@@ -228,7 +228,7 @@ summary {
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   color: #2D3436;
   background-color: #FFF;
   line-height: 1.5;
@@ -275,8 +275,7 @@ h6 {
 p {
   margin-top: 1em;
   margin-bottom: 1.5em;
-  font-size: 1em;
-  font-weight: 400; }
+  font-size: 1em; }
 
 strong {
   font-weight: 700; }
@@ -331,7 +330,7 @@ li {
 .btn {
   font-family: 'IBM Plex Mono', monospace;
   display: inline-block;
-  padding: .5rem 2rem;
+  padding: .8rem 1.6rem;
   background-color: transparent;
   color: #2D3436;
   text-align: center;
@@ -352,7 +351,7 @@ li {
             animation-timing-function: ease-in-out; }
   .btn--center {
     display: block;
-    width: 290px;
+    width: 300px;
     margin: 0 auto;
     border: 2px solid #FDCB6E; }
     .btn--center:hover {
@@ -387,8 +386,7 @@ body {
     font-weight: 400;
     transition: color .2s ease-in-out; }
     .site-header .nav-link:hover {
-      color: #FDCB6E;
-      padding-top: -3px; }
+      color: #FDCB6E; }
 
 .hero {
   height: 500px;
@@ -406,8 +404,7 @@ body {
     font-weight: 200; }
   .hero__kicker {
     display: inline;
-    color: #FDCB6E;
-    font-weight: 700; }
+    color: #FDCB6E; }
 
 .sports {
   display: -ms-grid;
@@ -435,21 +432,19 @@ body {
       max-height: 80%; }
   .sports .sport__thumb--bmx {
     background-color: #FDCB6E; }
+    .sports .sport__thumb--bmx img {
+      max-height: 80%;
+      top: 0;
+      right: 100px; }
   .sports .sport__thumb--basketball {
-    background-color: #DFE6E9; }
+    background-color: #00CEC9; }
+    .sports .sport__thumb--basketball img {
+      max-height: 100%; }
   .sports .sport__title {
     text-transform: capitalize;
     font-weight: 200; }
   .sports .sport__desc {
     margin-bottom: 2.2rem; }
-  .sports .sport__link {
-    text-transform: capitalize;
-    text-decoration: none;
-    font-weight: 700;
-    color: #2D3436;
-    transition: color .2s ease-in-out; }
-    .sports .sport__link:hover {
-      color: #0984E3; }
   .sports .sport__footer {
     display: flex;
     align-items: center; }
@@ -490,7 +485,10 @@ body {
 
 .coaches {
   background-color: #feefd3;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  margin-top: 4rem;
+  -webkit-clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 100%); }
   .coaches .wrap {
     width: 1050px;
     margin: 0 auto; }
@@ -500,7 +498,7 @@ body {
     color: #2D3436;
     font-weight: 200;
     text-align: center;
-    margin: 3rem 0; }
+    margin-top: 5rem; }
   .coaches__content {
     display: -ms-grid;
     display: grid;
@@ -519,8 +517,8 @@ body {
         font-weight: 200;
         margin: 0; }
       .coaches__content .coach__desc {
-        font-size: .8rem;
-        margin: 0; }
+        font-size: .9rem;
+        margin: .2rem 0 0 0; }
       .coaches__content .coach__sam {
         -ms-grid-column: 1;
         -ms-grid-column-span: 4;

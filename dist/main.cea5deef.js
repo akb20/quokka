@@ -197,8 +197,8 @@ require("../../node_modules/aos/dist/aos.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _aos.default.init({
-  duration: 500,
-  offset: 0,
+  duration: 600,
+  offset: 50,
   once: true
 });
 },{"../scss/main.scss":"assets/scss/main.scss","aos":"node_modules/aos/dist/aos.js","../../node_modules/aos/dist/aos.css":"node_modules/aos/dist/aos.css"}],"../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -228,7 +228,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58671" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51101" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

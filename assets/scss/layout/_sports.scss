@@ -37,33 +37,30 @@
 
     &__thumb--bmx {
       background-color: $yellow;
+
+      img {
+        max-height: 80%;
+        top: 0;
+        right: 100px;
+      }
     }
 
     &__thumb--basketball {
-      background-color: $gray;
+      background-color: $green;
+      img {
+        max-height: 100%;
+      }
     }
   
     &__title {
       text-transform: capitalize;
       font-weight: 200;
-    }
+     }
   
     &__desc {
       margin-bottom: 2.2rem;
     }
   
-    &__link {
-      text-transform: capitalize;
-      text-decoration: none;
-      // font-size: .8rem;
-      font-weight: 700;
-      color: $black;
-      transition: color .2s ease-in-out;
-      &:hover {
-        color: $blue;
-      }
-    }
-
     &__footer {
       display: flex;
       align-items: center;
